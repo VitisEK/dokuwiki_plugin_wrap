@@ -121,8 +121,8 @@ class action_plugin_wrap extends DokuWiki_Action_Plugin {
                     'type'   => 'format',
                     'title'  => $this->getLang('co'),
                     'icon'   => '../../plugins/wrap/images/toolbar/conf.png',
-                    'open'   => '<'.$syntaxSpan.' conf>',
-                    'close'  => '</'.$syntaxSpan.'>',
+                    'open'   => '<'.strtoupper($syntaxSpan).' conf>',
+                    'close'  => '</'.strtoupper($syntaxSpan).'>',
                 ),
             )
         );
